@@ -600,7 +600,7 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
   }
 
   /* Sidebar nav — larger font on mobile */
-  .sidebar-nav li a { font-size: 13px; padding: 10px 14px; }
+  .sidebar-nav li a { font-size: 12px; padding: 10px 14px; }
 
   /* Sections */
   .category-section { padding: 16px 12px 8px; }
