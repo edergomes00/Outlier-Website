@@ -289,7 +289,7 @@ function renderSidebar() {
   el.innerHTML = `
     <div class="sidebar-logo">
       <a href="index.html">
-        <img src="../.context/Logo/623555713_17952299901080027_7890209431105777883_n.jpg" alt="Outlier Experiences">
+        <img src="assets/logo.jpg" alt="Outlier Experiences">
       </a>
     </div>
     <div class="sidebar-social">
