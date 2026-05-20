@@ -563,8 +563,8 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
   }
   .top-bar-logo {
     display: block;
-    width: 52px;
-    height: 52px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     object-fit: cover;
   }
