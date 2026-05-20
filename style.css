@@ -590,7 +590,17 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
   .event-search-bar .top-bar-search { display: none; }
   .event-mobile-logo {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .event-mobile-logo::before,
+  .event-mobile-logo::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: var(--forest);
+    border-radius: 1px;
   }
   .event-mobile-logo img {
     width: 120px;
