@@ -596,7 +596,7 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
     width: 120px;
     height: auto;
     border-radius: 0;
-    background: var(--bg);
+    mix-blend-mode: multiply;
   }
 
   /* Sidebar nav — larger font on mobile */
