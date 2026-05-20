@@ -593,10 +593,10 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
     justify-content: center;
   }
   .event-mobile-logo img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 120px;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
   }
 
   /* Sidebar nav — larger font on mobile */
