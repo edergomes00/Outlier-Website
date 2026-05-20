@@ -587,6 +587,7 @@ body[data-page="event"] .event-search-bar { display: none; }
   /* Event page */
   body[data-page="event"] .page-wrap { padding-top: 0; }
   body[data-page="event"] .hamburger { display: none; }
+  body[data-page="event"] .event-search-bar { display: flex; }
   .event-search-bar { padding: 16px 16px 0; display: flex; justify-content: center; }
   .event-search-bar .top-bar-search { display: none; }
   .event-mobile-logo {
