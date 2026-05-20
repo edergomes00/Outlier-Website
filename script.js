@@ -423,6 +423,9 @@ function renderEventDetail(slug) {
 
   main.innerHTML = `
     <div class="event-search-bar">
+      <a href="index.html" class="event-mobile-logo">
+        <img src="assets/logo.jpg" alt="Outlier Experiences">
+      </a>
       <div class="top-bar-search">
         <input type="text" placeholder="Search experiences, venues, dates..." id="searchInput" oninput="handleSearch(this.value)">
       </div>

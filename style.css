@@ -147,6 +147,7 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
   z-index: 50;
   pointer-events: none;
 }
+.event-mobile-logo { display: none; }
 .top-bar-search { flex: 1; max-width: 380px; margin-left: auto; margin-right: 30%; pointer-events: auto; }
 .top-bar-search input {
   width: 100%;
@@ -584,8 +585,19 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
 
   /* Event page */
   body[data-page="event"] .page-wrap { padding-top: 0; }
-  .event-search-bar { padding: 12px 16px 0; }
-  .event-search-bar .top-bar-search { margin: 0; max-width: none; width: 100%; }
+  body[data-page="event"] .hamburger { display: none; }
+  .event-search-bar { padding: 16px 16px 0; display: flex; justify-content: center; }
+  .event-search-bar .top-bar-search { display: none; }
+  .event-mobile-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .event-mobile-logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
   /* Sections */
   .category-section { padding: 16px 12px 8px; }
