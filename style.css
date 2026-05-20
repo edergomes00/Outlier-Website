@@ -573,11 +573,11 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
   /* Layout */
   .page-wrap { margin-left: 0; padding-top: 0; }
 
-  /* Top bar — static on mobile */
+  /* Top bar — static, no background on mobile */
   .top-bar {
     position: static;
-    background: var(--surface);
-    border-bottom: 1px solid rgba(31,58,51,.12);
+    background: transparent;
+    border-bottom: none;
     pointer-events: auto;
     padding: 8px 16px;
   }
