@@ -313,6 +313,7 @@ function renderSidebar() {
 function renderTopBar() {
   return `
     <div class="top-bar">
+      <img class="top-bar-logo" src="assets/logo.jpg" alt="Outlier Experiences">
       <div class="top-bar-search">
         <input type="text" placeholder="Search experiences, venues, dates..." id="searchInput" oninput="handleSearch(this.value)">
       </div>
@@ -423,6 +424,7 @@ function renderEventDetail(slug) {
 
   main.innerHTML = `
     <div class="event-search-bar">
+      <img class="top-bar-logo" src="assets/logo.jpg" alt="Outlier Experiences">
       <div class="top-bar-search">
         <input type="text" placeholder="Search experiences, venues, dates..." id="searchInput" oninput="handleSearch(this.value)">
       </div>
