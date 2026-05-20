@@ -250,21 +250,7 @@ body[data-page="event"] .event-search-bar { display: none; }
 .badge-grupo    { background: rgba(23,46,37,.92); color: var(--sand); border: 1px solid rgba(238,230,210,.3); }
 .card-badge--inline { position: static; display: inline-block; }
 
-.card-save {
-  position: absolute;
-  top: 7px; right: 7px;
-  background: rgba(31,58,51,.72);
-  border: none;
-  color: var(--sand);
-  font-size: 14px;
-  width: 26px; height: 26px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  transition: all var(--ease);
-  z-index: 1;
-}
-.card-save:hover { color: var(--gold); }
-.card-save.saved { color: var(--gold); }
+
 
 .card-info { padding: 7px 2px 2px; }
 .card-slug {
@@ -617,10 +603,7 @@ body[data-page="event"] .event-search-bar { display: none; }
   /* Sections */
   .category-section { padding: 16px 12px 8px; }
 
-  /* Bigger touch targets on cards */
-  .card-save { width: 36px; height: 36px; font-size: 16px; }
-
-  /* Event detail */
+/* Event detail */
   .event-detail { padding: 16px 16px 32px; }
   .event-detail-grid { grid-template-columns: 1fr; gap: 20px; }
   .event-poster img { max-width: 260px; margin: 0 auto; }

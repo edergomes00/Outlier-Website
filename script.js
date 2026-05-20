@@ -327,7 +327,7 @@ function renderCard(ev) {
       <div class="card-image-wrap">
         <img src="${ev.image}" alt="${ev.name}" loading="lazy" onerror="this.style.display='none'">
         <span class="card-badge ${badgeClass(ev.badge)}">${ev.badge}</span>
-        <button class="card-save" onclick="event.stopPropagation();toggleSaveCard(this)" title="Save" aria-label="Save">♡</button>
+
       </div>
       <div class="card-info">
         <span class="card-slug">${ev.slug}</span>
@@ -492,15 +492,6 @@ function setupScrollSpy() {
 
 // ---- SAVE TOGGLES ----
 
-function toggleSaveCard(btn) {
-  const saved = btn.classList.toggle('saved');
-  btn.textContent = saved ? '♥' : '♡';
-}
-
-function toggleSaveDetail(btn) {
-  const saved = btn.classList.toggle('saved');
-  btn.textContent = saved ? '♥ Saved' : '♡ Save';
-}
 
 // ---- SIDEBAR MOBILE ----
 
