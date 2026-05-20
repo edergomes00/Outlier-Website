@@ -287,6 +287,7 @@ function renderSidebar() {
   ).join('');
 
   el.innerHTML = `
+    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Fechar menu">✕</button>
     <div class="sidebar-logo">
       <a href="index.html">
         <img src="assets/logo.jpg" alt="Outlier Experiences">
