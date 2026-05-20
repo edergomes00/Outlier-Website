@@ -303,7 +303,6 @@ function renderSidebar() {
         ${catLinks}
         <li class="nav-divider"></li>
         <li><a href="#grupos-vip" onclick="if(window.innerWidth<=800)closeSidebar()">VIP GROUPS</a></li>
-        <li><a href="#" onclick="if(window.innerWidth<=800)closeSidebar()">CONTACT</a></li>
       </ul>
     </nav>
   `;
