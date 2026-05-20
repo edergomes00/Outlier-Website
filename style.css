@@ -538,17 +538,77 @@ body[data-page="event"] .page-wrap { padding-top: 0; }
   justify-content: center;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE — TABLET / LARGE PHONE ========== */
 
 @media (max-width: 800px) {
+  /* Sidebar */
   .hamburger { display: flex; }
-  .sidebar { transform: translateX(-100%); transition: transform .28s ease; }
+  .sidebar { width: min(260px, 80vw); transform: translateX(-100%); transition: transform .28s ease; }
   .sidebar.open { transform: translateX(0); }
+
+  /* Layout */
   .page-wrap { margin-left: 0; }
-  .top-bar { padding-left: 52px; }
-  .event-detail { padding: 20px 16px 32px; }
-  .event-detail-grid { grid-template-columns: 1fr; }
-  .event-poster img { max-width: 280px; margin: 0 auto; }
-  .category-section { padding: 18px 14px 8px; }
-  .wpp-card { min-width: 160px; }
+
+  /* Top bar — solid background on mobile */
+  .top-bar {
+    background: var(--surface);
+    border-bottom: 1px solid rgba(31,58,51,.12);
+    pointer-events: auto;
+    padding-left: 58px;
+    padding-right: 16px;
+  }
+  .top-bar-search { margin: 0; max-width: none; }
+
+  /* Event page — push content below hamburger, reset search margins */
+  body[data-page="event"] .page-wrap { padding-top: var(--topbar-h); }
+  .event-search-bar { padding: 12px 16px 0; }
+  .event-search-bar .top-bar-search { margin: 0; max-width: none; }
+
+  /* Sections */
+  .category-section { padding: 16px 12px 8px; }
+
+  /* Bigger touch targets on cards */
+  .card-save { width: 36px; height: 36px; font-size: 16px; }
+
+  /* Event detail */
+  .event-detail { padding: 16px 16px 32px; }
+  .event-detail-grid { grid-template-columns: 1fr; gap: 20px; }
+  .event-poster img { max-width: 260px; margin: 0 auto; }
+  .event-meta h1 { font-size: 24px; }
+
+  /* Related events — stack vertically */
+  .next-event-item { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .nei-date { white-space: normal; }
+
+  /* WPP — 2 columns on tablet */
+  .wpp-card { min-width: 0; flex: 1 1 calc(50% - 5px); }
+
+  /* Footer */
+  .site-footer { flex-direction: column; text-align: center; gap: 8px; padding: 16px; }
+}
+
+/* ========== RESPONSIVE — SMALL PHONE ========== */
+
+@media (max-width: 480px) {
+  :root {
+    --card-w: 140px;
+    --card-img-h: 175px;
+  }
+
+  .event-meta h1 { font-size: 20px; }
+  .meta-row { font-size: 12px; }
+  .event-description { font-size: 12px; }
+
+  /* WPP — full width on small phones */
+  .wpp-card { flex: 1 1 100%; }
+
+  /* Hide "view all" link to save space */
+  .section-header a { display: none; }
+
+  /* Tighter section padding */
+  .category-section { padding: 14px 10px 6px; }
+  .section-header { margin-bottom: 10px; }
+
+  /* Btn full width */
+  .btn-comprar { font-size: 12px; padding: 13px; }
 }
